@@ -15,6 +15,10 @@ app.post("/send-email", (req, res) => {
     console.log("Received request:", req.body);  // 🔍 Debugging log
 
     const { name, email, subject, message } = req.body;
+    
+    if (!name || !email || !subject || !message) {
+        return res.status(400).json({ message: "All fields are required." });
+    }
 
     const transporter = nodemailer.createTransport({
         service: "gmail",
