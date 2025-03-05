@@ -132,9 +132,9 @@ const Projects = () => {
           </div>
         ))}
       </Carousel>
-      {/* <a href="#" className="view-more">
+      <a href="#" className="view-more">
         VIEW MORE
-      </a> */}
+      </a>
     </section>
   );
 };
