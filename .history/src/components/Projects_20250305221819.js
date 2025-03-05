@@ -78,7 +78,7 @@ const projects = [
     link: "/projects/project-five",
   },
   {
-    title: "end",
+    title: "Project Six",
     description: "Description for project sic.",
     image: project6Image,
     link: "/projects/project-six",
