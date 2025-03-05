@@ -10,9 +10,6 @@ import mfon from "../assets/images/mfon2.jpg";
 import ibr from "../assets/images/ibr4.jpg";
 import fahad from "../assets/images/fahad.jpg";
 import luchi from "../assets/images/luchi.jpeg";
-import cosby from "../assets/images/cosby.jpg";
-import sanusi from "../assets/images/Sanusi.jpg";
-import anas from "../assets/images/anas.jpg";
 import gammaImage from "../assets/images/gamma.png";
 import "./AboutPage.css";
 // import "./About.css";
@@ -190,37 +187,16 @@ const About = () => {
             </div>
             <div className="team-member">
               <div className="team-photo-placeholder">
-                <img src={wils} alt="team" className="team-img" />
-              </div>
-              <h3>Emmanuel Olorunhundo </h3>
-              <p>Director</p>
-            </div>
-            <div className="team-member">
-              <div className="team-photo-placeholder">
-                <img src={cosby} alt="team" className="team-img" />
+                <img src={ibr} alt="team" className="team-img" />
               </div>
               <h3>Cosby Ibanga</h3>
-              <p>Head of Operation </p>
+              <p>Operation Manger</p>
             </div>
             <div className="team-member">
               <div className="team-photo-placeholder">
                 <img src={luchi} alt="team" className="team-img" />
               </div>
               <h3>Victoria Onugha </h3>
-              <p>Head of PR</p>
-            </div>
-            <div className="team-member">
-              <div className="team-photo-placeholder">
-                <img src={mfon} alt="team" className="team-img" />
-              </div>
-              <h3>Mfon Akpabio (PhD)</h3>
-              <p>Head of HR</p>
-            </div>
-            <div className="team-member">
-              <div className="team-photo-placeholder">
-                <img src={sanusi} alt="team" className="team-img" />
-              </div>
-              <h3>Sanusi Rabbunallah </h3>
               <p>Head </p>
             </div>
             <div className="team-member">
@@ -228,21 +204,28 @@ const About = () => {
                 <img src={mfon} alt="team" className="team-img" />
               </div>
               <h3>Mfon Akpabio (PhD)</h3>
-              <p>Head Human Resources</p>
+              <p>HR Manager</p>
             </div>
             <div className="team-member">
               <div className="team-photo-placeholder">
                 <img src={fahad} alt="team" className="team-img" />
               </div>
               <h3>Fahad Abdulkadir</h3>
-              <p>Head of IT</p>
+              <p>IT Manager</p>
             </div>
             <div className="team-member">
               <div className="team-photo-placeholder">
-                <img src={anas} alt="team" className="team-img" />
+                <img src={mfon} alt="team" className="team-img" />
               </div>
-              <h3>Anas Tafida </h3>
-              <p>Head of Logistics</p>
+              <h3>Mfon Akpabio (PhD)</h3>
+              <p>HR Manager</p>
+            </div>
+            <div className="team-member">
+              <div className="team-photo-placeholder">
+                <img src={fahad} alt="team" className="team-img" />
+              </div>
+              <h3>Fahad Abdulkadir</h3>
+              <p>IT Manager</p>
             </div>
           </div>
         </div>

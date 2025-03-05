@@ -12,7 +12,6 @@ import fahad from "../assets/images/fahad.jpg";
 import luchi from "../assets/images/luchi.jpeg";
 import cosby from "../assets/images/cosby.jpg";
 import sanusi from "../assets/images/Sanusi.jpg";
-import anas from "../assets/images/anas.jpg";
 import gammaImage from "../assets/images/gamma.png";
 import "./AboutPage.css";
 // import "./About.css";
@@ -190,13 +189,6 @@ const About = () => {
             </div>
             <div className="team-member">
               <div className="team-photo-placeholder">
-                <img src={wils} alt="team" className="team-img" />
-              </div>
-              <h3>Emmanuel Olorunhundo </h3>
-              <p>Director</p>
-            </div>
-            <div className="team-member">
-              <div className="team-photo-placeholder">
                 <img src={cosby} alt="team" className="team-img" />
               </div>
               <h3>Cosby Ibanga</h3>
@@ -207,7 +199,7 @@ const About = () => {
                 <img src={luchi} alt="team" className="team-img" />
               </div>
               <h3>Victoria Onugha </h3>
-              <p>Head of PR</p>
+              <p>Head </p>
             </div>
             <div className="team-member">
               <div className="team-photo-placeholder">
@@ -236,13 +228,6 @@ const About = () => {
               </div>
               <h3>Fahad Abdulkadir</h3>
               <p>Head of IT</p>
-            </div>
-            <div className="team-member">
-              <div className="team-photo-placeholder">
-                <img src={anas} alt="team" className="team-img" />
-              </div>
-              <h3>Anas Tafida </h3>
-              <p>Head of Logistics</p>
             </div>
           </div>
         </div>

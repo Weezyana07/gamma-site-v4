@@ -207,7 +207,7 @@ const About = () => {
                 <img src={luchi} alt="team" className="team-img" />
               </div>
               <h3>Victoria Onugha </h3>
-              <p>Head of PR</p>
+              <p>Head </p>
             </div>
             <div className="team-member">
               <div className="team-photo-placeholder">
