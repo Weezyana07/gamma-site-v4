@@ -185,10 +185,10 @@ const ContactPage = () => {
           <div className="">
             <h2>Connect With Us</h2>
             <div className="social-icons">
-              <a href="https://facebook.com" target="_blank" rel="noreferrer">
+              <a href="https://web.facebook.com/gammaspectre" target="_blank" rel="noreferrer">
                 Facebook
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer">
+              <a href="https://x.com/GammaSpectre" target="_blank" rel="noreferrer">
                 Twitter
               </a>
             </div>

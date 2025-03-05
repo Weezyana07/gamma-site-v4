@@ -186,10 +186,24 @@ const About = () => {
             </div>
             <div className="team-member">
               <div className="team-photo-placeholder">
+                <img src={ibr} alt="team" className="team-img" />
+              </div>
+              <h3>Cosby Ibanga</h3>
+              <p>Operation Manger</p>
+            </div>
+            <div className="team-member">
+              <div className="team-photo-placeholder">
+                <img src={wils} alt="team" className="team-img" />
+              </div>
+              <h3>Sanusi </h3>
+              <p>Chief Engineer</p>
+            </div>
+            <div className="team-member">
+              <div className="team-photo-placeholder">
                 <img src={mfon} alt="team" className="team-img" />
               </div>
               <h3>Mfon Akpabio (PhD)</h3>
-              <p>Operations Manager</p>
+              <p>HR Manager</p>
             </div>
             <div className="team-member">
               <div className="team-photo-placeholder">
@@ -197,20 +211,6 @@ const About = () => {
               </div>
               <h3>Fahad Abdulkadir</h3>
               <p>IT Manager</p>
-            </div>
-            <div className="team-member">
-              <div className="team-photo-placeholder">
-                <img src={ibr} alt="team" className="team-img" />
-              </div>
-              <h3>Ibrahim S. Nayaya</h3>
-              <p>MD/CEO</p>
-            </div>
-            <div className="team-member">
-              <div className="team-photo-placeholder">
-                <img src={wils} alt="team" className="team-img" />
-              </div>
-              <h3>Wil's Akpan</h3>
-              <p>Director</p>
             </div>
           </div>
         </div>

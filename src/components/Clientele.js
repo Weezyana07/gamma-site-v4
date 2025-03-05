@@ -3,22 +3,47 @@ import React from "react";
 import "./Clientele.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import customer1Image from "../assets/images/copslogo.png";
-import customer2Image from "../assets/images/defencelogo.png";
-import customer3Image from "../assets/images/minedulogo.png";
+import copslogo from "../assets/images/copslogo.png";
+import copsagro from "../assets/images/copsagro.jpg";
+import minsedulogo from "../assets/images/minsedulogo.png";
+import waveline from "../assets/images/waveline.jpg"
+import sacsol  from "../assets/images/SACSOL.png";
+import leading from "../assets/images/Leading.png";
+import kebbi from "../assets/images/kebbi.jpg";
+import obsidian from "../assets/images/obsidian.png";
 
 const clienteleData = [
   {
-    name: "Cops Limited",
-    image: customer1Image,
+    name: "COPs Limited",
+    image: copslogo,
   },
   {
-    name: "Federal Ministry of Defence",
-    image: customer2Image,
+    name: "COPs Agro Limited",
+    image: copsagro,
   },
   {
     name: "Federal Ministry of Education",
-    image: customer3Image,
+    image: minsedulogo,
+  },
+  {
+    name: "Waveline Resources",
+    image: waveline,
+  },
+  {
+    name: "SACSOL Engineering Limited",
+    image: sacsol,
+  },
+  {
+    name: "Leading Diagonal Engineering Limited",
+    image: leading,
+  },
+  {
+    name: "Kebbi State Government",
+    image: kebbi,
+  },
+  {
+    name: "Obsidian Trade Limited",
+    image: obsidian,
   },
 ];
 

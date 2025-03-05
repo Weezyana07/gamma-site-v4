@@ -15,11 +15,11 @@ const Footer = () => {
           </p>
           <br />
           <div className="social-links">
-            <a href="#facebook" aria-label="Facebook">
+            <a href="https://web.facebook.com/gammaspectre" aria-label="Facebook">
               <FacebookLogo className="social-icon" />
             </a>
             {"|"}
-            <a href="#x" aria-label="X">
+            <a href="https://x.com/GammaSpectre" aria-label="X">
               <XLogo className="social-icon" />
             </a>
           </div>
