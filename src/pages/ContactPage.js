@@ -36,6 +36,8 @@ const ContactPage = () => {
   });
   const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
+  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+
 
   const isValidEmail = (email) => /\S+@\S+\.\S+/.test(email);
 
@@ -62,7 +64,7 @@ const ContactPage = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/send-email", {
+      const response = await fetch(`${API_URL}/send-email`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
