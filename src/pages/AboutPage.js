@@ -14,6 +14,7 @@ import cosby from "../assets/images/cosby.jpg";
 import sanusi from "../assets/images/Sanusi.jpg";
 import anas from "../assets/images/anas.jpg";
 import emma from "../assets/images/emma.jpeg";
+import juan from "../assets/images/juan.jpg";
 import gammaImage from "../assets/images/gamma.png";
 import "./AboutPage.css";
 // import "./About.css";
@@ -226,10 +227,10 @@ const About = () => {
             </div>
             <div className="team-member">
               <div className="team-photo-placeholder">
-                <img src={mfon} alt="team" className="team-img" />
+                <img src={juan} alt="team" className="team-img" />
               </div>
-              <h3>Mfon Akpabio (PhD)</h3>
-              <p>Head Human Resources</p>
+              <h3>Juan Gutierrez</h3>
+              <p>Business Consultant & Strategist</p>
             </div>
             <div className="team-member">
               <div className="team-photo-placeholder">
