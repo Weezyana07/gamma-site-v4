@@ -1,11 +1,15 @@
-require("dotenv").config(); // Load .env variables
+require("dotenv").config(); 
 
 const express = require("express");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: ["https://gammaspectre.com.ng"], 
+  methods: ["POST"],
+  allowedHeaders: ["Content-Type"],
+}));
 app.use(express.json());
 
 const env_user = process.env.EMAIL_USER;
