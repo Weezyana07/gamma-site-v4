@@ -172,6 +172,11 @@ img {
   text-decoration: underline;
 }
 
+label {
+  font-weight: bold;
+  text-align: left;
+}
+
 /* Breakpoints */
 
 /* Small screens: mobile phones */
