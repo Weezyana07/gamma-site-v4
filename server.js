@@ -6,15 +6,15 @@ const nodemailer = require("nodemailer");
 const app = express();
 
 // Allow local and production domains
-const allowedOrigins = [
-  "http://localhost:3000",
-  "https://gammaspectre.com.ng"
-];
-
 app.use(
   cors({
     origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
+      const allowedOrigins = [
+        "http://localhost:3000",
+        "https://gammaspectre.com.ng",
+        "https://www.gammaspectre.com.ng"
+      ];
+      if (!origin || allowedOrigins.includes(origin) || origin.endsWith("gammaspectre.com.ng")) {
         callback(null, true);
       } else {
         callback(new Error("Not allowed by CORS"));
@@ -24,6 +24,7 @@ app.use(
     allowedHeaders: ["Content-Type"],
   })
 );
+
 
 app.use(express.json());
 
