@@ -63,7 +63,7 @@ const ContactPage = () => {
           setSuccessMessage("");
         }, 5000);
       } else {
-        setSuccessMessage(data.message || "Failed to send message. Try again.");
+        setSuccessMessage("data.message || Failed to send message. Try again.");
       }
     } catch (error) {
       setSuccessMessage("An error occurred. Try again.");
@@ -96,6 +96,7 @@ const ContactPage = () => {
           content="Reach out to us for expert consultancy and IT solutions."
         />
       </Helmet>
+      ;
       <Header />
       <div className="contact-header">
         <div className="contact-top-image"></div>

@@ -40,7 +40,7 @@
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 90%; /* Ensures responsiveness */
-  max-width: 450px;
+  max-width: 350px;
 }
 
 .project-card:hover {

@@ -96,6 +96,7 @@ const ContactPage = () => {
           content="Reach out to us for expert consultancy and IT solutions."
         />
       </Helmet>
+      ;
       <Header />
       <div className="contact-header">
         <div className="contact-top-image"></div>
