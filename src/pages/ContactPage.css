@@ -9,6 +9,10 @@ img {
   display: block; /* Removes extra space below images */
 }
 
+form {
+  text-align: left;
+}
+
 .contact {
   display: flex;
   justify-content: space-between;
