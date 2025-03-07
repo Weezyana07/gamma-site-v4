@@ -5,7 +5,68 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import "./ContactPage.css"; // Create this file for styling
 
-<Helmet>
+const ContactPage = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+
+  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+
+  const isValidEmail = (email) => /\S+@\S+\.\S+/.test(email);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setSuccessMessage("");
+
+    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+      setSuccessMessage("❌ All fields are required.");
+      setLoading(false);
+      return;
+    }
+
+    if (!isValidEmail(formData.email)) {
+      setSuccessMessage("❌ Enter a valid email address.");
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const response = await fetch(`${API_URL}/send-email`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSuccessMessage("✅ Message sent successfully!");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setSuccessMessage("❌ Failed to send message. Try again.");
+      }
+    } catch (error) {
+      setSuccessMessage("❌ An error occurred. Try again.");
+      console.error("Error sending email:", error);
+    }
+
+    setLoading(false);
+  };
+  
+  return (
+    <div className="contact-container">
+      <Helmet>
   <script type="application/ld+json">
     {JSON.stringify({
       "@context": "https://schema.org",
@@ -26,68 +87,7 @@ import "./ContactPage.css"; // Create this file for styling
     content="Reach out to us for expert consultancy and IT solutions."
   />
 </Helmet>;
-
-const ContactPage = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-  const [loading, setLoading] = useState(false);
-  const [successMessage, setSuccessMessage] = useState("");
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
-
-
-  const isValidEmail = (email) => /\S+@\S+\.\S+/.test(email);
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setSuccessMessage("");
-
-    // Form validation
-    if (!formData.name || !formData.email || !formData.message) {
-      setSuccessMessage("All fields are required.");
-      setLoading(false);
-      return;
-    }
-
-    if (!isValidEmail(formData.email)) {
-      setSuccessMessage("Enter a valid email address.");
-      setLoading(false);
-      return;
-    }
-
-    try {
-      const response = await fetch(`${API_URL}/send-email`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-     // const data = await response.json();
-
-      if (response.ok) {
-        setSuccessMessage("Message sent successfully!");
-        setFormData({ name: "", email: "", subject: "", message: "" });
-      } else {
-        setSuccessMessage("Failed to send message. Try again.");
-      }
-    } catch (error) {
-      setSuccessMessage("An error occurred. Try again.");
-      console.error("Error sending email:", error);
-    }
-
-    setLoading(false);
-  };
-
-  return (
-    <div className="contact-container">
+        <Header />
       <div className="contact-header">
         <div className="contact-top-image"></div>
         <div className="contact-mid-text">
@@ -99,7 +99,6 @@ const ContactPage = () => {
           </p>
         </div>
         <div className="contact-bottom-image"></div>
-        <Header />
         <div className="contact-welcome">
           <h1 className="contact-title">Reach Out and Connect:</h1>
           <h2 className="contact-subtitle">Let's Start a Conversation! </h2>
