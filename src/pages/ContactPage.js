@@ -203,5 +203,3 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
-
-//http://localhost:5000/send-email

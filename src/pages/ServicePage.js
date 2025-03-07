@@ -14,18 +14,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "./ServicePage.css";
 
-<Helmet>
-  <title>Our Services - Gamma Spectre Solutions</title>
-  <meta
-    name="description"
-    content="Explore our top-tier services, from IT solutions to consultancy and construction."
-  />
-  <meta property="og:title" content="Gamma Spectre Solutions - Services" />
-  <meta
-    property="og:description"
-    content="Comprehensive services including IT, consultancy, and more."
-  />
-</Helmet>;
 
 const Services = () => {
   const location = useLocation();
@@ -44,6 +32,18 @@ const Services = () => {
 
   return (
     <div className="services-page">
+      <Helmet>
+  <title>Our Services - Gamma Spectre Solutions</title>
+  <meta
+    name="description"
+    content="Explore our top-tier services, from IT solutions to consultancy and construction."
+  />
+  <meta property="og:title" content="Gamma Spectre Solutions - Services" />
+  <meta
+    property="og:description"
+    content="Comprehensive services including IT, consultancy, and more."
+  />
+</Helmet>;
       <Header />
       <div className="service-header">
         <div className="content-container">

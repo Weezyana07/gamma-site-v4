@@ -10,7 +10,11 @@ const Projects = lazy(() => import("../components/Projects"));
 const Clientele = lazy(() => import("../components/Clientele"));
 const Contact = lazy(() => import("../components/Contact"));
 
-<Helmet>
+
+const Home = () => {
+  return (
+    <div>
+        <Helmet>
   <title>Home - Gamma Spectre Solutions</title>
   <meta
     name="description"
@@ -22,10 +26,6 @@ const Contact = lazy(() => import("../components/Contact"));
     content="Expert IT consultancy, manufacturing, and more."
   />
 </Helmet>;
-
-const Home = () => {
-  return (
-    <div>
       <Header />
       <div className="home-header">
         <div className="top-image"></div>

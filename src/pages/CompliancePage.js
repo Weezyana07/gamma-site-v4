@@ -11,17 +11,17 @@ import bprImage from "../assets/images/bpr.png";
 import scumlImage from "../assets/images/scuml.png";
 import "./CompliancePage.css";
 
-<Helmet>
+
+const CompliancePage = () => {
+  return (
+    <div>
+      <Helmet>
   <title>Compliance Documents - Gamma Spectre Solutions</title>
   <meta
     name="description"
     content="Upload and manage compliance documents securely."
   />
 </Helmet>;
-
-const CompliancePage = () => {
-  return (
-    <div>
       <Header />
       <div className="about-header">
         <div className="about-container">

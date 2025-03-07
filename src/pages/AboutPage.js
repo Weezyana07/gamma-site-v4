@@ -19,17 +19,17 @@ import gammaImage from "../assets/images/gamma.png";
 import "./AboutPage.css";
 // import "./About.css";
 
-<Helmet>
+
+const About = () => {
+  return (
+    <div className="">
+      <Helmet>
   <title>About Us | Gamma Spectre</title>
   <meta
     name="description"
     content="Learn more about Gamma Spectre's mission and team."
   />
 </Helmet>;
-
-const About = () => {
-  return (
-    <div className="">
       <Header />
       <div className="about-header">
         <div className="about-container">
