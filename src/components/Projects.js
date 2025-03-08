@@ -1,88 +1,93 @@
 // src/components/Projects.js
 import React from "react";
 import "./Projects.css";
-import project1Image from "../assets/images/project1.jpeg"; // Example image path
-import project2Image from "../assets/images/project2.jpeg";
-import project3Image from "../assets/images/project3.jpeg";
-import project4Image from "../assets/images/project4.jpeg";
-import project5Image from "../assets/images/project5.jpeg";
-import project6Image from "../assets/images/project6.jpeg";
-import paliative from "../assets/images/paliative1.jpeg";
+import export1 from "../assets/images/export.jpeg"; // Example image path
+import export2 from "../assets/images/export2.jpg";
+import paliative from "../assets/images/paliative.jpeg";
+import paliative1 from "../assets/images/paliative1.jpeg";
+import recircle from "../assets/images/recircle.jpeg";
+import recircle2 from "../assets/images/recircle2.jpeg";
+import road from "../assets/images/road.jpeg";
+import cons from "../assets/images/const.jpeg";
+import rapel from "../assets/images/rapel.jpg";
+import rapel1 from "../assets/images/rapel1.jpeg";
+import project3 from "../assets/images/project3.jpeg";
+import perimeter from "../assets/images/perimeter.jpeg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const projects = [
   {
-    title: "COVID19 Paliative Distribution",
-    description: "Description for project one.",
+    title: "COVID19 Paliative",
+    description: "Supply for covid19 Palliative",
+    image: paliative1,
+    link: "/projects/#",
+  },
+  {
+    title: "COVID19 Paliative",
+    description: "Supply for covid19 Palliative",
     image: paliative,
-    link: "/projects/project-one",
+    link: "/projects/#",
   },
   {
-    title: "Project Two",
-    description: "Description for project two.",
-    image: project2Image,
-    link: "/projects/project-two",
+    title: "Export of Grains",
+    description: "Export of grains to a client",
+    image: export1,
+    link: "/projects/#",
   },
   {
-    title: "Project Three",
-    description: "Description for project three.",
-    image: project3Image,
-    link: "/projects/project-three",
+    title: "Export of Grains",
+    description: "Export of grains to a client",
+    image: export2,
+    link: "/projects/#",
   },
   {
-    title: "Project Four",
-    description: "Description for project four.",
-    image: project4Image,
-    link: "/projects/project-four",
+    title: "Accomodation Project",
+    description: "22 rooms Accomodation Project for a client",
+    image: project3,
+    link: "/projects/#",
   },
   {
-    title: "Project Five",
-    description: "Description for project five.",
-    image: project5Image,
-    link: "/projects/project-five",
+    title: "Rappel Project",
+    description: "Rappelling Tower Project for a client",
+    image: rapel1,
+    link: "/projects/#",
   },
   {
-    title: "Project Six",
-    description: "Description for project sic.",
-    image: project6Image,
-    link: "/projects/project-six",
+    title: "Rappel Project",
+    description: "Rappelling Tower Project for a client",
+    image: rapel,
+    link: "/projects/#",
   },
   {
-    title: "Project One",
-    description: "Description for project one.",
-    image: project1Image,
-    link: "/projects/project-one",
+    title: "Perimeter Project",
+    description: "Perimeter fencing for a client",
+    image: perimeter,
+    link: "/projects/#",
   },
   {
-    title: "Project Two",
-    description: "Description for project two.",
-    image: project2Image,
-    link: "/projects/project-two",
+    title: "Road Construction",
+    description: "Construction of a road for a client",
+    image: road,
+    link: "/projects/#",
   },
   {
-    title: "Project Three",
-    description: "Description for project three.",
-    image: project3Image,
-    link: "/projects/project-three",
+    title: "Road Construction",
+    description: "Construction of a road for a client",
+    image: cons,
+    link: "/projects/#",
   },
   {
-    title: "Project Four",
-    description: "Description for project four.",
-    image: project4Image,
-    link: "/projects/project-four",
+    title: "Reclircling Plant",
+    description: "Construction and setting of a recircle plant",
+    image: recircle2,
+    link: "/projects/#",
   },
   {
-    title: "Project Five",
-    description: "Description for project five.",
-    image: project5Image,
-    link: "/projects/project-five",
-  },
-  {
-    title: "end",
-    description: "Description for project sic.",
-    image: project6Image,
-    link: "/projects/project-six",
+    title: "Reclircling Plant",
+    description: "Construction and setting of a recircle plant",
+    image: recircle,
+    link: "/projects/#",
   },
 ];
 
