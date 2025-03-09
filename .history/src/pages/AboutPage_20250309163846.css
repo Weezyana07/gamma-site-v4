@@ -20,10 +20,6 @@ img {
   /* text-align: center; */
 }
 
-.img-box {
-  margin: 1rem;
-}
-
 /* Service Header Section */
 .about-header {
   position: relative;
@@ -314,6 +310,7 @@ img {
     height: auto;
     object-fit: contain;
     display: block;
+    margin: auto;
   }
   .value {
     margin: 0 2rem;
@@ -400,15 +397,12 @@ img {
   .intro-section {
     flex-direction: column;
   }
-  .intro-section p {
-    margin: 1rem;
-  }
   .mission-vision-section {
     flex-direction: column;
   }
-  .mission-vision-section p {
+  /* .mission-vision-section p {
     margin: 1rem;
-  }
+  } */
   .it-img,
   .mv-img {
     max-width: 100%;
@@ -423,9 +417,6 @@ img {
   .about-description {
     margin: 0 2rem;
     font-size: 1rem;
-  }
-  .intro-section p {
-    margin: 1rem;
   }
 }
 

@@ -106,9 +106,7 @@ const About = () => {
               drives us to provide superior services and develop solutions that
               empower businesses to thrive.
             </p>
-            <div className="img-box">
-              <img src={aboutImg} alt="IT" className="it-img" />
-            </div>
+            <img src={aboutImg} alt="IT" className="it-img" />
           </div>
         </div>
       </section>

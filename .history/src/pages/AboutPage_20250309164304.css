@@ -20,10 +20,6 @@ img {
   /* text-align: center; */
 }
 
-.img-box {
-  margin: 1rem;
-}
-
 /* Service Header Section */
 .about-header {
   position: relative;
@@ -406,9 +402,9 @@ img {
   .mission-vision-section {
     flex-direction: column;
   }
-  .mission-vision-section p {
+  /* .mission-vision-section p {
     margin: 1rem;
-  }
+  } */
   .it-img,
   .mv-img {
     max-width: 100%;
