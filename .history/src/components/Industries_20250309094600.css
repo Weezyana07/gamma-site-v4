@@ -1,0 +1,266 @@
+.industries {
+  padding: 5rem 3rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* .industries span {
+  color: #1d70b6;
+  font-size: 1.2rem;
+}
+
+.industries h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+} */
+
+.industry-content {
+  margin: 0 auto;
+  max-width: 1200px; /* Centers the content and restricts its width */
+}
+
+.ndustry-content h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ndustry-content h2 span {
+  color: #1d70b6;
+}
+
+.industry-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.industry-card {
+  display: flex;
+  flex-direction: column; /* Ensures content stacks vertically */
+  justify-content: space-between; /* Distributes space evenly */
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 30%;
+  max-width: 20vw;
+  min-height: 350px; /* Set a minimum height for equal cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.industry-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.industry-card h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.industry-card p {
+  flex-grow: 1; /* Allows description to take available space */
+  font-size: 1rem;
+  text-align: left;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: auto; /* Pushes it to the bottom */
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: #ff4500;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  align-self: center; /* Centers the button */
+}
+
+.read-more:hover {
+  background-color: #ff4500;
+  color: white;
+}
+
+/* Responsive Design */
+
+/* Small Screens (Phones) */
+@media (max-width: 480px) {
+  .industries {
+    padding: 2rem 1rem;
+  }
+
+  .industries h2 {
+    font-size: 1.5rem;
+  }
+
+  .industry-card {
+    width: 100%;
+    max-width: 320px; /* Full width with padding for phones */
+    margin: 0 auto;
+    min-height: auto;
+  }
+
+  .industry-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .industry-card h3 {
+    font-size: 1rem;
+  }
+
+  .industry-card p {
+    font-size: 0.9rem;
+  }
+
+  .read-more {
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .industries {
+    padding: 3rem 1.5rem;
+  }
+
+  .industries h2 {
+    font-size: 1.8rem;
+  }
+
+  .industry-card {
+    width: 45%; /* Two cards per row */
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .industry-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .industry-card h3 {
+    font-size: 1rem;
+  }
+
+  .industry-card p {
+    font-size: 0.9rem;
+  }
+
+  .read-more {
+    font-size: 1rem;
+  }
+}
+
+/* Large Screens (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .industries {
+    padding: 4rem 2rem;
+  }
+
+  .industries h2 {
+    font-size: 2rem;
+  }
+
+  .industry-card {
+    width: 30%; /* Three cards per row */
+    max-width: 300px;
+  }
+
+  .industry-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .industry-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .industry-card p {
+    font-size: 0.9rem;
+  }
+
+  .read-more {
+    font-size: 1rem;
+  }
+}
+
+/* Extra-Large Screens (Desktops and Large Laptops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .industries {
+    padding: 4rem 2rem;
+  }
+
+  .industries h2 {
+    font-size: 2.2rem;
+  }
+
+  .industry-card {
+    width: 25%; /* Four cards per row */
+    max-width: 280px;
+  }
+
+  .industry-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .industry-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .industry-card p {
+    font-size: 1rem;
+  }
+
+  .read-more {
+    font-size: 1.1rem;
+  }
+}
+
+/* Ultra-Wide Screens (1201px+) */
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .industries {
+    padding: 5rem 3rem;
+  }
+
+  .industries h2 {
+    font-size: 2.5rem;
+  }
+
+  .industry-card {
+    width: 22%; /* Fits as many cards as possible per row */
+    max-width: 20vw;
+  }
+
+  .industry-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .industry-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .industry-card p {
+    font-size: 0.9rem;
+  }
+
+  .read-more {
+    font-size: 1.2rem;
+  }
+}

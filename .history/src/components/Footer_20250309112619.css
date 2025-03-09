@@ -1,0 +1,177 @@
+footer {
+  background-color: #3c3c3c;
+  padding: 30px 20px;
+  width: 100%;
+  color: whitesmoke;
+}
+
+.footer-body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Footer Sections */
+.footer-section {
+  flex: 1;
+  margin: 0 1rem;
+  min-width: 220px;
+  color: whitesmoke;
+}
+.bold {
+  font-weight: bold;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin: 8px 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #1d70b6;
+}
+
+/* Branding */
+.comp {
+  font-weight: bold;
+  color: #1d70b6;
+}
+
+.stra {
+  font-style: italic;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  fill: black;
+  transition: fill 0.3s ease;
+}
+
+.social-icon:hover {
+  fill: #1d70b6;
+}
+
+/* Copyright Section */
+.footer-section p:last-child {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.compliance {
+  text-decoration: underline !important;
+  font-style: italic;
+}
+
+/* ✅ Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer-body {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-section p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ Smaller Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer-body {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px;
+  }
+
+  .footer-section {
+    text-align: center;
+    min-width: 250px;
+  }
+
+  .footer-section p {
+    font-size: 1rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* ✅ Medium Tablets & Small Laptops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-body {
+    padding: 30px;
+    justify-content: space-between;
+  }
+
+  .footer-section {
+    text-align: left;
+  }
+}
+
+/* ✅ Large Laptops & Desktops (1025px to 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .footer-body {
+    padding: 35px;
+  }
+
+  .footer-section p {
+    font-size: 1.1rem;
+  }
+
+  .social-icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* ✅ Extra-Large Screens (1201px and above) */
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .footer-body {
+    padding: 40px;
+    max-width: 1400px;
+  }
+
+  .footer-section p {
+    font-size: 1.2rem;
+  }
+
+  .social-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
