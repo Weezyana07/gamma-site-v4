@@ -6,36 +6,32 @@ const nodemailer = require("nodemailer");
 const app = express();
 
 // Allow local and production domains
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      const allowedOrigins = [
-        "http://localhost:3000",
-        "https://gammaspectre.com.ng",
-        "https://www.gammaspectre.com.ng",
-      ];
-      if (
-        !origin ||
-        allowedOrigins.includes(origin) ||
-        origin.endsWith("gammaspectre.com.ng")
-      ) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    methods: ["POST"],
-    allowedHeaders: ["Content-Type"],
-  })
-);
-
 // app.use(
 //   cors({
-//     origin: "*", // Temporarily allow all origins (for debugging)
+//     origin: function (origin, callback) {
+//       const allowedOrigins = [
+//         "http://localhost:3000",
+//         "https://gammaspectre.com.ng",
+//         "https://www.gammaspectre.com.ng"
+//       ];
+//       if (!origin || allowedOrigins.includes(origin) || origin.endsWith("gammaspectre.com.ng")) {
+//         callback(null, true);
+//       } else {
+//         callback(new Error("Not allowed by CORS"));
+//       }
+//     },
 //     methods: ["POST"],
 //     allowedHeaders: ["Content-Type"],
 //   })
 // );
+
+app.use(
+  cors({
+    origin: "*", // Temporarily allow all origins (for debugging)
+    methods: ["POST"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
 
 app.use(express.json());
 

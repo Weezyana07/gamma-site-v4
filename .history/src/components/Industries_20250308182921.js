@@ -64,9 +64,9 @@ const Industries = () => {
               />
               <h3>{industry.title}</h3>
               <p>{industry.description}</p>
-              <Link to={industry.link} className="read-more">
+              <a href={industry.link} className="read-more">
                 READ MORE
-              </Link>
+              </a>
             </div>
           ))}
         </div>

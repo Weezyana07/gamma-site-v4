@@ -19,12 +19,9 @@ const Services = () => {
 
   useEffect(() => {
     if (location.hash) {
-      const id = location.hash.replace("#", ""); // Remove #
-      const element = document.getElementById(id);
+      const element = document.getElementById(location.hash.substring(1));
       if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 100); // ✅ Added delay for smooth scroll
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     }
   }, [location]);

@@ -19,16 +19,15 @@ const Services = () => {
 
   useEffect(() => {
     if (location.hash) {
-      const id = location.hash.replace("#", ""); // Remove #
-      const element = document.getElementById(id);
+      const hash = location.hash.replace("#", ""); // Remove #
+      const element = document.getElementById(hash);
       if (element) {
         setTimeout(() => {
           element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 100); // ✅ Added delay for smooth scroll
+        }, 100); // Delay for smooth scroll
       }
     }
   }, [location]);
-
   return (
     <div className="services-page">
       <Helmet>

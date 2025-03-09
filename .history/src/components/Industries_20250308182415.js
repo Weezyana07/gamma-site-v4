@@ -24,13 +24,6 @@ const industries = [
     link: "/services#it",
   },
   {
-    title: "Construction",
-    description:
-      "We offer specialised consultancy services to a wide range of industries, providing expert guidance and solutions for diverse challenges.",
-    image: construction,
-    link: "/services#construction",
-  },
-  {
     title: "Manufacturing",
     description:
       "Our construction division is dedicated to the creation of quality infrastructures, from residential and commercial buildings to civil engineering projects.",
@@ -38,11 +31,18 @@ const industries = [
     link: "/services#manufacturing",
   },
   {
+    title: "Construction",
+    description:
+      "We offer specialised consultancy services to a wide range of industries, providing expert guidance and solutions for diverse challenges.",
+    image: construction,
+    link: "/services#construction",
+  },
+  {
     title: "General Contract",
     description:
       "Our IT division excels in delivering cutting-edge technology solutions, including network infrastructure, software development, and telecom services.",
     image: general,
-    link: "/services#contracts",
+    link: "/services#general",
   },
 ];
 
@@ -64,9 +64,9 @@ const Industries = () => {
               />
               <h3>{industry.title}</h3>
               <p>{industry.description}</p>
-              <Link to={industry.link} className="read-more">
+              <a href="/services#it" className="read-more">
                 READ MORE
-              </Link>
+              </a>
             </div>
           ))}
         </div>
