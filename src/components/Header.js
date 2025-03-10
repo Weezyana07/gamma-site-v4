@@ -9,6 +9,14 @@ const Header = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const currentPath = window.location.pathname;
 
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setIsNavScrolled(window.scrollY > 50);
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       requestAnimationFrame(() => {
