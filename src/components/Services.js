@@ -40,9 +40,9 @@ const Services = () => {
         <h1 aria-label="Services We Provide" className="text-3xl font-bold">
           What you can expect from us
         </h1>
-        <p className="text-lg text-gray-700 mt-2">
+       {/* <p className="text-lg text-gray-700 mt-2">
           Discover how we can elevate your business.
-        </p>
+        </p> */}
         <div className="service-cards">
           {services.map((service, index) => (
             <div key={index} className="service-card">
